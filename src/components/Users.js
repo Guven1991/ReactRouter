@@ -15,16 +15,20 @@ function Users() {
     <div>
       <h2>Users</h2>
       {isLoading && <div>Loading....</div>}
-      <ul>
-        {users.map((user) => (
-          <>
-            <li key={user.id}>
-              <Link to={`/users/${user.id}`}>{user.name}</Link>
-            </li>
-          </>
-        ))}
-      </ul>
-      <Outlet />
+      <div style={{ display: 'flex' }}>
+        <ul style={{ flex: 1 }}>
+          {users.map((user) => (
+            <>
+              <li key={user.id}>
+                <Link to={`/users/${user.id}`}>{user.name}</Link>
+              </li>
+            </>
+          ))}
+        </ul>
+        <div style={{ flex: 2 }}>
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 }
