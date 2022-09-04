@@ -18,12 +18,13 @@ function User() {
     <div>
       <h1>User Detail</h1>
       {isLoading && <div>Loading....</div>}
-      <div className="card">
+      {JSON.stringify(user)}
+      {/* <div className="card">
         <h3>{user?.name}</h3>
         <p>{user?.username}</p>
         <p>{user?.email}</p>
         <p>{user?.phone}</p>
-      </div>
+      </div> */}
 
       <br></br>
       <br></br>

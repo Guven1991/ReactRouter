@@ -15,7 +15,7 @@ function Users() {
     <div>
       <h2>Users</h2>
       {isLoading && <div>Loading....</div>}
-      <div style={{ display: 'flex' }}>
+      {/* <div style={{ display: 'flex' }}> */}
         <ul style={{ flex: 1 }}>
           {users.map((user) => (
             <>
@@ -25,10 +25,10 @@ function Users() {
             </>
           ))}
         </ul>
-        <div style={{ flex: 2 }}>
+        {/* <div style={{ flex: 2 }}> */}
           <Outlet />
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </div>
   );
 }
