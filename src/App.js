@@ -11,6 +11,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
+    <h1>Example 1</h1>
       <nav>
         <ul>
           <li>
