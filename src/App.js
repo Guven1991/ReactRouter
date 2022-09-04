@@ -23,6 +23,10 @@ function App() {
           <li>
             <Link to="/users">Users</Link>
           </li>
+          <li>
+            <a href='/#'>learn react</a>
+
+          </li>
         </ul>
       </nav>
 
